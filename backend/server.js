@@ -28,8 +28,18 @@ const searchIndex = products.map((p) => ({
 const llmCache = new Map();
 const CACHE_TTL = 5 * 60 * 1000; // 5 minutes
 
+// ─── Optimization: Normalize queries ────────────────────────────────────────
+// Strip trailing punctuation so "gaming?" and "gaming" produce identical results
+function normalizeQuery(query) {
+  return query
+    .toLowerCase()
+    .trim()
+    .replace(/[?!.,;:]+$/g, "")   // strip trailing punctuation
+    .replace(/\s+/g, " ");         // collapse multiple spaces
+}
+
 function getCachedResponse(query) {
-  const key = query.toLowerCase().trim();
+  const key = normalizeQuery(query);
   const cached = llmCache.get(key);
   if (cached && Date.now() - cached.timestamp < CACHE_TTL) return cached.data;
   llmCache.delete(key);
@@ -37,7 +47,7 @@ function getCachedResponse(query) {
 }
 
 function setCachedResponse(query, data) {
-  const key = query.toLowerCase().trim();
+  const key = normalizeQuery(query);
   llmCache.set(key, { data, timestamp: Date.now() });
   // Evict old entries if cache grows too large
   if (llmCache.size > 100) {
@@ -145,7 +155,7 @@ CRITICAL RULES:
           { role: "system", content: systemPrompt },
           { role: "user", content: query },
         ],
-        temperature: 0.2,
+        temperature: 0,
         max_tokens: 400,
         response_format: { type: "json_object" },
       });
