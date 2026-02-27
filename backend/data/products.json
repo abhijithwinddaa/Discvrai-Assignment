@@ -1,0 +1,110 @@
+[
+  {
+    "id": "P001",
+    "name": "Laptop Pro X",
+    "category": "Electronics",
+    "price": 74999,
+    "description": "A high-performance laptop with 16GB RAM, 512GB SSD, and a 15.6-inch display. Ideal for work, coding, and gaming.",
+    "tags": [
+      "laptop",
+      "gaming",
+      "work",
+      "portable"
+    ]
+  },
+  {
+    "id": "P002",
+    "name": "Budget Smartphone",
+    "category": "Electronics",
+    "price": 14999,
+    "description": "An affordable smartphone with a 6.5-inch display, 4GB RAM, and a long-lasting battery. Great for everyday use.",
+    "tags": [
+      "smartphone",
+      "budget",
+      "affordable",
+      "mobile"
+    ]
+  },
+  {
+    "id": "P003",
+    "name": "Wireless Noise-Cancelling Headphones",
+    "category": "Accessories",
+    "price": 11999,
+    "description": "Premium over-ear headphones with active noise cancellation, 30-hour battery life, and immersive sound quality.",
+    "tags": [
+      "headphones",
+      "wireless",
+      "noise-cancelling",
+      "audio"
+    ]
+  },
+  {
+    "id": "P004",
+    "name": "Mechanical Gaming Keyboard",
+    "category": "Accessories",
+    "price": 6999,
+    "description": "RGB backlit mechanical keyboard with Cherry MX switches. Perfect for gamers and typists who want tactile feedback.",
+    "tags": [
+      "keyboard",
+      "gaming",
+      "mechanical",
+      "rgb"
+    ]
+  },
+  {
+    "id": "P005",
+    "name": "4K Ultra HD Smart TV",
+    "category": "Electronics",
+    "price": 44999,
+    "description": "55-inch 4K Smart TV with HDR, built-in streaming apps, and Dolby Atmos sound. Transform your living room experience.",
+    "tags": [
+      "tv",
+      "4k",
+      "smart",
+      "entertainment",
+      "home"
+    ]
+  },
+  {
+    "id": "P006",
+    "name": "Ergonomic Office Chair",
+    "category": "Home",
+    "price": 22999,
+    "description": "Adjustable ergonomic chair with lumbar support, breathable mesh back, and armrests. Designed for long work sessions.",
+    "tags": [
+      "chair",
+      "office",
+      "ergonomic",
+      "comfort",
+      "work"
+    ]
+  },
+  {
+    "id": "P007",
+    "name": "Fitness Smartwatch",
+    "category": "Accessories",
+    "price": 19999,
+    "description": "Water-resistant smartwatch with heart rate monitor, GPS tracking, sleep analysis, and 7-day battery life.",
+    "tags": [
+      "smartwatch",
+      "fitness",
+      "health",
+      "wearable",
+      "sports"
+    ]
+  },
+  {
+    "id": "P008",
+    "name": "Portable Bluetooth Speaker",
+    "category": "Accessories",
+    "price": 4499,
+    "description": "Compact waterproof Bluetooth speaker with 360-degree sound, 12-hour playtime, and rugged design for outdoor adventures.",
+    "tags": [
+      "speaker",
+      "bluetooth",
+      "portable",
+      "outdoor",
+      "waterproof"
+    ]
+  }
+]
