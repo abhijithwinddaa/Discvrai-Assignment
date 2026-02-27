@@ -71,7 +71,7 @@ const AskQuery = ({ onResults, onClear }) => {
                 </h2>
                 <p className="ask-card__subtitle">
                     Ask anything — "Show me budget smartphones", "What's good for gaming?",
-                    "Find me something under $100"
+                    "Find me something under ₹10,000"
                 </p>
 
                 <form className="ask-form" onSubmit={handleAsk} id="ask-form">
