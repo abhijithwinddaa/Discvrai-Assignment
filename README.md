@@ -116,9 +116,42 @@ The system prompt instructs the LLM to:
 
 ~3 hours (backend + LLM integration, frontend + styling, testing)
 
+## 🌐 Live Demo
+
+| Service | URL |
+|---------|-----|
+| **Frontend** | [https://gregarious-syrniki-9b6c9a.netlify.app](https://gregarious-syrniki-9b6c9a.netlify.app) |
+| **Backend API** | [https://discvrai-assignment.onrender.com](https://discvrai-assignment.onrender.com) |
+
+> **Note:** The Render free tier may take ~30 seconds to wake up on the first request.
+
+## 💬 Sample AI Questions
+
+**Budget-based:**
+- "Show me products under ₹10,000"
+- "What can I get for ₹20,000?"
+- "Find me the cheapest accessories"
+
+**Use-case:**
+- "I need something for my home office setup"
+- "What's good for gaming?"
+- "I want to stay fit, what do you recommend?"
+- "Suggest products for outdoor adventures"
+
+**Specific:**
+- "I need a laptop for coding and work"
+- "What's the best audio gear you have?"
+- "Show me waterproof products"
+
+**Conversational:**
+- "I'm setting up my entertainment room, what should I buy?"
+- "What do you recommend for a birthday gift under ₹15,000?"
+- "I work from home 8 hours a day, help me pick products"
+
 ## 📝 Environment Variables
 
 | Variable         | Description                | Required |
 |-----------------|----------------------------|----------|
 | `GROQ_API_KEY`   | Groq API key               | Yes (for AI features) |
 | `PORT`           | Backend server port        | No (default: 5000) |
+| `VITE_API_URL`   | Backend URL for frontend   | No (default: http://localhost:5000) |
